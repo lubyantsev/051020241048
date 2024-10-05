@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать расписание</title>
+</head>
+<body>
+    <h1>Создать новое расписание</h1>
+    <form action="{{ url_for('edit_temp_schedule') }}" method="post">
+        <label for="when">Когда?</label>
+        <input type="text" name="when" id="when" required>
+        <label for="where">Где?</label>
+        <input type="text" name="where" id="where" required>
+        <label for="who">Кто?</label>
+        <input type="text" name="who" id="who">
+        <button type="submit">Добавить</button>
+    </form>
+</body>
+</html>
